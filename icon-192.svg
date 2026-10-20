@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="32" fill="#0d47a1"/><circle cx="96" cy="96" r="70" fill="none" stroke="#fff" stroke-width="6"/><path d="M96 40v112M56 72h80M56 120h80" stroke="#fff" stroke-width="10" stroke-linecap="round"/><circle cx="96" cy="96" r="14" fill="#fff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="Krebsstoffwechsel-App">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1565c0"/>
+      <stop offset="100%" stop-color="#0d47a1"/>
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="42" fill="url(#bg)"/>
+  <circle cx="96" cy="96" r="56" fill="none" stroke="#ffffff" stroke-width="8"/>
+  <path d="M96 45v102M55 96h82" stroke="#ffffff" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="96" cy="96" r="11" fill="#ffffff"/>
+  <path d="M68 60c14 18 14 54 0 72" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M124 60c-14 18-14 54 0 72" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="5" stroke-linecap="round"/>
+</svg>
