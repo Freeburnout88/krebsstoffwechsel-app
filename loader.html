@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d47a1">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Krebsstoffwechsel-App</title>
+<style>body{font-family:system-ui;background:#0d47a1;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}</style>
+</head>
+<body>
+<p id="s">App wird geladen…</p>
+<script>
+async function boot(){
+  try{
+    const b64 = await (await fetch('app.html.gz.b64')).text();
+    const bin = Uint8Array.from(atob(b64.trim()), c => c.charCodeAt(0));
+    const ds = new DecompressionStream('gzip');
+    const stream = new Blob([bin]).stream().pipeThrough(ds);
+    const html = await new Response(stream).text();
+    document.open(); document.write(html); document.close();
+  }catch(e){
+    document.getElementById('s').innerHTML = 'Laden fehlgeschlagen.<br><a style=color:#fff href=\"https://github.com/Freeburnout88/krebsstoffwechsel-app\" >GitHub</a>';
+    console.error(e);
+  }
+}
+if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function(){});
+boot();
+</script>
+</body>
+</html>
