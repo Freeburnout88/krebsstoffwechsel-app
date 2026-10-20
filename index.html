@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d47a1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="KrebsApp">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.svg">
+<title>Krebsstoffwechsel-App</title>
+<style>
+body{font-family:system-ui,sans-serif;background:#0d47a1;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;text-align:center;padding:1.5rem}
+a{color:#fff;font-weight:700;font-size:1.2rem}
+p{opacity:.9}
+</style>
+</head>
+<body>
+<div>
+<h1>Krebsstoffwechsel-App</h1>
+<p>Wird geladen…</p>
+<p><a href="Krebsstoffwechsel-Komplett.html">App öffnen</a></p>
+</div>
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(function(){});}
+location.replace('Krebsstoffwechsel-Komplett.html');
+</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+INSTALLATION Krebsstoffwechsel-App
+
+1) PWA: GitHub Pages URL in Chrome öffnen → App installieren
+2) APK: pwabuilder.com mit der Pages-URL → Android Package
+
+Spenden: Adnan Hota | IBAN DE37 1001 1001 2132 8357 30 | BIC NTSBDEB1XXX
+E-Mail: adileohota@gmail.com
