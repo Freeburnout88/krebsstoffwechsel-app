@@ -1,22 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Krebsstoffwechsel-App">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e88e5"/>
-      <stop offset="55%" stop-color="#1565c0"/>
-      <stop offset="100%" stop-color="#0d47a1"/>
+    <linearGradient id="bg" x1="18%" y1="12%" x2="88%" y2="92%">
+      <stop offset="0%" stop-color="#42a5f5"/>
+      <stop offset="42%" stop-color="#1565c0"/>
+      <stop offset="100%" stop-color="#0a3d91"/>
     </linearGradient>
+    <radialGradient id="shine" cx="32%" cy="28%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
-  <g fill="none" stroke="#ffffff" stroke-linecap="round">
-    <circle cx="256" cy="256" r="152" stroke-width="20"/>
-    <path d="M256 116v280" stroke-width="32"/>
-    <path d="M116 256h280" stroke-width="32"/>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="112" fill="url(#shine)"/>
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="256" cy="256" r="174" stroke-width="6" stroke-opacity="0.35"/>
+    <circle cx="256" cy="256" r="143" stroke-width="18"/>
+    <path d="M256 148v216" stroke-width="34"/>
+    <path d="M148 256h216" stroke-width="34"/>
   </g>
-  <circle cx="256" cy="256" r="30" fill="#ffffff"/>
+  <circle cx="256" cy="256" r="26" fill="#ffffff"/>
   <g fill="#ffffff">
-    <circle cx="363.5" cy="148.5" r="16"/>
-    <circle cx="148.5" cy="148.5" r="16"/>
-    <circle cx="148.5" cy="363.5" r="16"/>
-    <circle cx="363.5" cy="363.5" r="16"/>
+    <circle cx="357" cy="155" r="13"/>
+    <circle cx="155" cy="155" r="13"/>
+    <circle cx="155" cy="357" r="13"/>
+    <circle cx="357" cy="357" r="13"/>
   </g>
 </svg>
